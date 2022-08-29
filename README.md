@@ -1,4 +1,4 @@
-# PyPassHook
+# PyPassHook V1.0
 Python script which grabs all of the targets chrome logins and bundles them into a txt file within a chosen Email. Expanded from a [GeeksForGeeks project](https://www.geeksforgeeks.org/how-to-extract-chrome-passwords-in-python/), I added Email functionality for functionality.
 
 I considered implementing this within my [UltimateGrabber](https://github.com/MightySpaceman/Ultimategrabber/) project, however I reasoned that it would make it much to overpowered and could get out of hand when used incorrectly.
